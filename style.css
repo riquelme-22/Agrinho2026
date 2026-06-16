@@ -1,1 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f4;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #2e6f40; /* Verde escuro */
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Menu de Navegação */
+nav {
+  background-color: #1e4629; /* Verde mais escuro */
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #ffffff;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #3d8b52; /* Destaque ao passar o mouse */
+}
+
+/* Conteúdo Principal */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  color: #2e6f40;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2ece2;
+  padding-bottom: 5px;
+}
+
+section p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Listas */
+ul {
+  list-style-position: inside;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 12px;
+    border-bottom: 1px solid #265833;
+  }
+}
